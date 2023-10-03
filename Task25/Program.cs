@@ -30,7 +30,7 @@ int a = Promt("Input number A: ");
 int b = Promt("Input number B: ");
 if (TrueOrFalsExponent(b))
 {
-    Console.WriteLine("Result - > Exponent(a, b)");
+    Console.WriteLine($"Result - > {Exponent(a, b)}");
 }
 
 

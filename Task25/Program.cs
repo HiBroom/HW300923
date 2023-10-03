@@ -12,10 +12,10 @@ int Promt(string message)
 }
 int Exponent(int numberA, int numberB)
 {
-    int result = 0;
-    for (int i = 1; i < numberB; i++)
+    int result = 1;
+    for (int i = 0; i < numberB; i++)
     {
-        result = numberA * numberA;
+        result *= numberA;
         
     }
     return result;
@@ -30,15 +30,6 @@ int a = Promt("Input number A: ");
 int b = Promt("Input number B: ");
 if (TrueOrFalsExponent(b))
 {
-    Console.WriteLine($"Result - > {Exponent(a, b)}");
+    Console.WriteLine($"{a}, {b} - > {Exponent(a, b)}");
 }
 
-
-
-
-
-
-
-
-// int numberA = GetNumbers();
-// int numberB = GetNumbers();
